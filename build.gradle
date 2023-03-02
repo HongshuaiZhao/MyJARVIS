@@ -1,0 +1,32 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+plugins {
+    id 'com.android.application' version '7.2.2' apply false
+    id 'com.android.library' version '7.2.2' apply false
+    id 'org.jetbrains.kotlin.android' version '1.6.10' apply false
+}
+//android{
+//
+//}
+//android {
+//    signingConfigs {
+//        release {
+//            storeFile file("/Users/bytedance/Desktop/sign")
+//            storePassword "123456"
+//            keyAlias "key0"
+//            keyPassword "123456"
+//        }
+//    }
+//
+//    buildTypes {
+//        release {
+//            signingConfig signingConfigs.release
+//            // Other configurations for the release build type
+//        }
+//        // Other build types and their configurations
+//    }
+//}
+
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
