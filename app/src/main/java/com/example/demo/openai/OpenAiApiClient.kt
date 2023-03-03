@@ -16,12 +16,8 @@ class OpenAiApiClient {
     private val retrofit: Retrofit
 
     init {
-//        val loggingInterceptor = HttpLoggingInterceptor().apply {
-//            level = HttpLoggingInterceptor.Level.BODY
-//        }
 
         val httpClient = OkHttpClient.Builder()
-//            .addInterceptor(loggingInterceptor)
             .build()
 
         retrofit = Retrofit.Builder()
@@ -45,10 +41,6 @@ class OpenAiApiClient {
                 response: Response<OpenAiResponse>
             ) {
                 if (response.isSuccessful) {
-                    val id = response.body()?.id
-                    val objectName = response.body()?._object
-//                    val model = response.body()?.model
-                    val created = response.body()?.created
                     val choice = response.body()?.choices?.get(0)
                     val text = choice?.message?.content ?: ""
                     onResponse(text)

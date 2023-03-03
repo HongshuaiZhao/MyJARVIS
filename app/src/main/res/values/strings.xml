@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Demo</string>
+    <string name="hint_text">在这里面输入文字</string>
+    <string name="key_text">在这里面输入Key</string>
+    <string name="menu_title">菜单</string>
+    <string name="placeholder">我是答案</string>
+    <string name="submit">提交</string>
+    <string name="expand">展开</string>
 </resources>
