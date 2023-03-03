@@ -48,15 +48,15 @@
 
     </TextView>
 
-    <TextView
-        android:id="@+id/expand"
-        android:background="#03DAC5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/expand"
-        android:layout_marginEnd="10dp"
-        android:layout_marginBottom="50dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"/>
+<!--    <TextView-->
+<!--        android:id="@+id/expand"-->
+<!--        android:background="#03DAC5"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="@string/expand"-->
+<!--        android:layout_marginEnd="10dp"-->
+<!--        android:layout_marginBottom="50dp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"/>-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>

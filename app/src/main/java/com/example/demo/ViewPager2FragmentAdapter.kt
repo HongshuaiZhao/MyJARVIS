@@ -15,7 +15,8 @@ internal class ViewPager2FragmentAdapter(fragmentManager: FragmentManager, lifec
     override fun createFragment(position: Int): Fragment {
         return when (position) {
             //Chatgpt
-            else -> ViewPagerFragmentGpt()
+            0 -> ViewPagerFragmentGpt()
+            else -> ProfileFragment()
             //stable diffusion
             //profile
 
@@ -23,6 +24,6 @@ internal class ViewPager2FragmentAdapter(fragmentManager: FragmentManager, lifec
     }
 
     override fun getItemCount(): Int {
-        return 1
+        return 2
     }
 }

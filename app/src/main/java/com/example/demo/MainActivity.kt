@@ -1,6 +1,9 @@
 package com.example.demo
 
 import android.annotation.SuppressLint
+import android.content.Context
+import android.content.Intent
+import android.content.SharedPreferences
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
@@ -22,6 +25,8 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+
         viewPager2 = findViewById(R.id.viewPager2)
         viewPager2?.adapter = ViewPager2FragmentAdapter(supportFragmentManager, lifecycle)
         viewModel = ViewModelProvider(this).get(MainViewModel::class.java)

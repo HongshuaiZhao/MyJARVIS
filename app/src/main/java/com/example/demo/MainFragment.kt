@@ -63,7 +63,7 @@ class ViewPagerFragmentGpt : Fragment() {
         text = v.findViewById(R.id.text)
         editText = v.findViewById(R.id.editText)
         submit = v.findViewById(R.id.submit)
-        stateButton = v.findViewById(R.id.expand)
+//        stateButton = v.findViewById(R.id.expand)
         markwon = this.context?.let { Markwon.create(it) }
         val spannable = markwon?.toMarkdown("*这里是答案*")
         text?.text = spannable
@@ -83,15 +83,15 @@ class ViewPagerFragmentGpt : Fragment() {
             CommonUtils.copyWithVibrate(this.context, text?.text.toString())
             return@setOnLongClickListener true
         }
-        stateButton?.setOnClickListener {
-            if (stateButton?.text == "展开") {
-                stateButton?.text = "收起"
-                text?.maxLines = 100
-            } else {
-                stateButton?.text = "展开"
-                text?.maxLines = 30
-            }
-        }
+//        stateButton?.setOnClickListener {
+//            if (stateButton?.text == "展开") {
+//                stateButton?.text = "收起"
+//                text?.maxLines = 100
+//            } else {
+//                stateButton?.text = "展开"
+//                text?.maxLines = 30
+//            }
+//        }
     }
 
     private fun initViewModel() {
@@ -107,7 +107,7 @@ class ViewPagerFragmentGpt : Fragment() {
         openAiApiClient.getCompletion(
             //https://platform.openai.com/account/api-keys 生成地址
             apiKey = viewModel?.requestApiKey
-                ?: "Bearer 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",
+                ?: "Bearer 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",
             request = request,
             onResponse = { response ->
                 runOnUiThread {

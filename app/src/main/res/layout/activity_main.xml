@@ -12,47 +12,5 @@
         android:layout_height="match_parent" />
 
 
-<!--    <EditText-->
-<!--        android:id="@+id/editText"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_marginTop="40dp"-->
-<!--        android:hint="@string/hint_text"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toTopOf="parent"-->
-<!--        app:layout_constraintVertical_bias="0.3" />-->
 
-<!--    <TextView-->
-<!--        android:id="@+id/submit"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_marginLeft="20dp"-->
-<!--        android:background="#03DAC5"-->
-<!--        android:padding="4dp"-->
-<!--        android:text="提交"-->
-<!--        app:layout_constraintBottom_toBottomOf="@id/editText"-->
-<!--        app:layout_constraintHorizontal_bias="0.5"-->
-<!--        app:layout_constraintStart_toEndOf="@id/editText"-->
-<!--        app:layout_constraintTop_toTopOf="@id/editText"-->
-<!--        app:layout_constraintVertical_bias="0.5" />-->
-
-
-<!--    <TextView-->
-<!--        android:id="@+id/text"-->
-<!--        android:layout_width="0dp"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_marginStart="20dp"-->
-<!--        android:layout_marginEnd="20dp"-->
-<!--        android:background="#03DAC5"-->
-<!--        android:ellipsize="end"-->
-<!--        android:maxLines="30"-->
-<!--        android:text="1234"-->
-<!--        android:textIsSelectable="true"-->
-<!--        app:layout_constraintBottom_toBottomOf="parent"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toTopOf="parent">-->
-
-<!--    </TextView>-->
 </androidx.constraintlayout.widget.ConstraintLayout>

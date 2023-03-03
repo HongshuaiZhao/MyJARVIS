@@ -6,4 +6,7 @@
     <string name="placeholder">我是答案</string>
     <string name="submit">提交</string>
     <string name="expand">展开</string>
+    <string name="username">请输入你的用户名</string>
+    <string name="password">请输入你的密码</string>
+    <string name="login">登录</string>
 </resources>
